@@ -3,6 +3,10 @@ import { backgroundColor, fontPrimaryColor } from '../Color';
 import { fontFamilyArial } from '../Font';
 
 export const GlobalStyle = createGlobalStyle`
+    * {
+        scroll-behavior: smooth;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -14,6 +18,6 @@ export const GlobalStyle = createGlobalStyle`
         
         font-family: ${fontFamilyArial};
         line-height: 1.6;
-        color: ${fontPrimaryColor}; 
+        color: ${fontPrimaryColor};
     }
 `;
